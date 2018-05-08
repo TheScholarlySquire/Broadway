@@ -7,60 +7,73 @@
         <link href="./Resources/Style.css" type="text/css" rel="stylesheet">
         <title></title>
     </head>
-    <!--I don't think that the ID="home" is necessary; should I just include a comment below to specify the section?-->
-    <!-- Nothing is actually styled using the "home" ID-->
-    <div id="home">
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>Broadway Design</h1>
-                <nav>
-                    <h3><a href="#home">Home</a><br></h3>
-                    <h3><a href="#process">Process</a><br></h3>
-                    <h3><a href="#work">Work</a><br></h3>
-                    <h3><a href="#team">Team</a><br></h3>
-                    <h3><a href="#contact">Contact</a><br></h3>
-                </nav>
-            </div>
-        </div>
+
+<body>
+    <!--header-->
+    <div class="hero">
+        <h1>Broadway Design</h1>
+
+        <p><a class="nav" href="#home">Home</a></p>
+        <p><a class="nav" href="#process">Process</a></p>
+        <p><a class="nav" href="#work">Work</a></p>
+        <p><a class="nav" href="#team">Team</a></p>
+        <p><a class="nav" href="#contact">Contact</a></p>
     </div>
 
-    <div id="process">
+<!--body-->
+    <div class="container" id="process">
+
         <h2>Our Process</h2>
 
-        <!--identify-->
-        <img src="./Resources/Img/identify.svg" />
-        <h3>Identify</h3>
-        <p>We focus on the most important details.</p>
+        <div class="sec"
+            <img src="./Resources/Img/identify.svg" />
+            <h3>Identify</h3>
+            <p>We focus on the most important details.</p>
+        </div>
 
-        <!--understand-->
+        <div class="sec">
         <img src="./Resources/Img/understand.svg" />
         <h3>Understand</h3>
         <p>We study out projects inside and out.</p>
+        </div>
 
-        <!--execute-->
+        <div class="sec">
         <img src="./Resources/Img/execute.svg" />
         <h3>Execute</h3>
         <p>We put everything we have into our work.</p>
+        </div>
     </div>
 
-    <div id="footer">
-        <h3>Designed in New York</h3>
+<!--About-->
+    <div class="hero">
+      <h2>Designed in New York</h2>
+    </div>
 
-        <h3 id="work">Portfolio</h3>
-        <p>Coming Soon</p>
-
-        <h3 id="team">Team</h3>
-        <p>We're Hiring!</p>
-
-        <h3 id="contact">Contact</h3>
-        <p>Phone: (555)-555-5555<br />
-        E-mail: test@example.com<br />
-        Twitter: @test</p>
-
-        <p id="copy"><small>&copy Broadway 2016 <strong><a href="#home">Home</a> <a href="#process">About</a> <a href="#work"> Work</a> <a href="#team"> Team</a> <a href="#contact"> Contact</a></strong></small></p>
-
+    <div class ="container" id="work">
+        <div class="sec">
+            <h3>Portfolio</h3>
+            <p>Coming Soon</p>
         </div>
-    <body>
+        <div class="sec" id="team">
+            <h3>Team</h3>
+            <p>We're Hiring!</p>
+        </div>
+        <div class="sec" id="contact">
+            <h3>Contact</h3>
+            <p>Phone: (555)-555-5555</p>
+            <p>E-mail: test@example.com</p>
+            <p>Twitter: @test</p>
+        </div>
+    </div>
 
+    <div class="copy">
+        <p>&copy; Broadway 2016
+            <a class="nav" href="#home">Home</a>
+            <a class="nav" href="#process">About</a>
+            <a class="nav" href="#work"> Work</a>
+            <a class="nav" href="#team">Team</a>
+            <a class="nav" href="#contact">Contact</a>
+        </p>
+    </div>
     </body>
 </html>
