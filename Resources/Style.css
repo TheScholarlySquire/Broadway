@@ -1,0 +1,16 @@
+body, html {
+    font-family: "Helvetica", sans-serif;
+    height: 100%
+}
+
+.hero-image {
+    background-image: url("./Img/flatiron.png") no-repeat center center;
+    background-size: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image .hero-text {
+    text-align: center;
+    vertical-align: center;
+}
